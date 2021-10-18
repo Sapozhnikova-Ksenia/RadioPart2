@@ -64,7 +64,7 @@ public class RadioTest {
         radio.setCurrentRadiostation(5);
         radio.setCurrentRadiostation(-5);
         int actual = radio.getCurrentRadiostation();
-        int expected = 5;
+        int expected = 0;
 
         assertEquals(expected, actual);
     }
@@ -76,7 +76,7 @@ public class RadioTest {
         radio.setCurrentRadiostation(3);
         radio.setCurrentRadiostation(15);
         int actual = radio.getCurrentRadiostation();
-        int expected = 3;
+        int expected = 9;
 
         assertEquals(expected, actual);
     }
